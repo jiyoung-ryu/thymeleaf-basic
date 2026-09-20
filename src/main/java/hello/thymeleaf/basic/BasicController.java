@@ -62,11 +62,11 @@ public class BasicController {
         }
     }
 
-//    @GetMapping("/date")
-//    public String date(Model model) {
-//        model.addAttribute("localDateTime", LocalDateTime.now());
-//        return "basic/date";
-//    }
+    @GetMapping("/date")
+    public String date(Model model) {
+        model.addAttribute("localDateTime", LocalDateTime.now());
+        return "basic/date";
+    }
 
 //    @GetMapping("link")
 //    public String link(Model model) {
