@@ -119,14 +119,14 @@ public class BasicController {
         return "basic/block";
     }
 
-//    @GetMapping("/javascript")
-//    public String javascript(Model model) {
-//
-//        model.addAttribute("user", new User("UserA", 10));
-//        addUsers(model);
-//
-//        return "basic/javascript";
-//    }
+    @GetMapping("/javascript")
+    public String javascript(Model model) {
+
+        model.addAttribute("user", new User("UserA", 10));
+        addUsers(model);
+
+        return "basic/javascript";
+    }
 
     private void addUsers(Model model) {
         List<User> list = new ArrayList<>();
